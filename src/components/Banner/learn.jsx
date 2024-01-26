@@ -1,0 +1,108 @@
+import React from "react";
+import ReactCountryFlag from "react-country-flag";
+import { Link } from "react-router-dom";
+
+function Learn() {
+  return (
+    <>
+      <div className="learn__container display-flex">
+        <div className="learn__content">
+          <h3>I Want to Learn?</h3>
+        </div>
+        <div className="learn__flags display-flex">
+          <div className="learn__flags-content">
+            <Link to="/german" className="content__links">
+              <div className="flag display-flex">
+                <ReactCountryFlag
+                  countryCode="DE"
+                  svg
+                  style={{
+                    width: "2em",
+                    height: "2em",
+                  }}
+                  title="DE"
+                />
+                <p>GERMAN</p>
+              </div>
+            </Link>
+          </div>
+
+          <div className="learn__flags-content">
+            <Link to="/french" className="content__links">
+              <div className="flag display-flex">
+                <ReactCountryFlag
+                  countryCode="FR"
+                  svg
+                  style={{
+                    width: "2em",
+                    height: "2em",
+                  }}
+                  title="FR"
+                  className="flag"
+                />
+                <p>FRENCH</p>
+              </div>
+            </Link>
+          </div>
+
+          <div className="learn__flags-content">
+            <Link to="/spanish" className="content__links">
+              <div className="flag display-flex">
+                <ReactCountryFlag
+                  countryCode="ES"
+                  svg
+                  style={{
+                    width: "2em",
+                    height: "2em",
+                  }}
+                  title="ES"
+                  className="flag"
+                />
+                <p>SPANISH</p>
+              </div>
+            </Link>
+          </div>
+
+          <div className="learn__flags-content">
+            <Link to="/portuguese" className="content__links">
+              <div className="flag display-flex">
+                <ReactCountryFlag
+                  countryCode="PT"
+                  svg
+                  style={{
+                    width: "2em",
+                    height: "2em",
+                  }}
+                  title="PT"
+                  className="flag"
+                />
+                <p>PORTUGUESE</p>
+              </div>
+            </Link>
+          </div>
+
+          <div className="learn__flags-content">
+            <Link to="/chinese" className="content__links">
+              <div className="flag display-flex">
+                <ReactCountryFlag
+                  countryCode="CN"
+                  svg
+                  style={{
+                    width: "2em",
+                    height: "2em",
+                  }}
+                  title="CN"
+                  className="flag"
+                />
+                <p>CHINESE</p>
+              </div>
+            </Link>
+          </div>
+
+        </div>
+      </div>
+    </>
+  );
+}
+
+export default Learn;
